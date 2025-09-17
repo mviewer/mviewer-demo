@@ -1,0 +1,16 @@
+{
+  "name": "mviewer-demo",
+  "version": "1.0.0",
+  "description": "Mviewer v4 or later, compatible with Bootstrap 5.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}

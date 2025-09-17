@@ -1,0 +1,527 @@
+{
+  "config": {
+    "logo": "",
+    "searchable": true,
+    "template": "./catalogue/template/catalogue.mst",
+    "searchKeys": ["tags"],
+    "placeholder": "Exemple: SLD",
+    "inputMin": 2
+  },
+  "data": [
+    {
+      "id": "1",
+      "title": "GéoBretagne",
+      "words": "flux, Géobretagne, WMS, flux",
+      "tags": "Géobretagne, WMS",
+      "description": "Exemple exploitant uniquement des flux GéoBretagne pour les fonds cartographiques et pour les thématiques.",
+      "level": "simple",
+      "url_source": "../demos/demos/geobretagne.xml",
+      "url_demo": "../../?config=ressources/demos/demos/geobretagne.xml"
+    },
+    {
+      "id": "2",
+      "title": "Style WMS",
+      "words": "SLD,WMS",
+      "tags": "Flux WMS, SLD, Styles externes",
+      "description": "Exemple exploitant les capacités de stylage du mviewer sur des couches WMS à l'aide des SLD",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/sld.xml",
+      "url_demo": "../../?config=ressources/demos/demos/sld.xml"
+    },
+    {
+      "id": "3",
+      "title": "Fonds cartographiques",
+      "tags": "OpenStreetMap, Baselayers, Géoportail, CartoDB",
+      "description": "Exemple de fonds cartographiques (flux tuilés) pouvant être mobilisés dans le mviewer : GéoBretagne, Géoportail, OpenStreetMap-MapQuest, Stamen, CartoDB",
+      "level": "simple",
+      "url_source": "../demos/demos/fonds.xml",
+      "url_demo": "../../?config=ressources/demos/demos/fonds.xml"
+    },
+    {
+      "id": "4",
+      "title": "Filtres CQL",
+      "tags": "Filtre CQL, filtre attributaire, filtre géographique, masque",
+      "description": "Exemple illustrant l'utilisation de filtres attributaires (couche 1) ou géographiques (couche 2) ainsi que la fonction masque.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/cql.xml",
+      "url_demo": "../../?config=ressources/demos/demos/cql.xml"
+    },
+    {
+      "id": "5",
+      "title": "Filtre temporel",
+      "tags": "Temporalité, filtre",
+      "description": "Exemple illustrant l'utilisation de la dimension temporelle dans mviewer. La couche 1 est avec un slider temporel, la couche 2 avec un calendrier.      ",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/time.xml",
+      "url_demo": "../../?config=ressources/demos/demos/time.xml"
+    },
+    {
+      "id": "6",
+      "title": "Cadastre",
+      "tags": "Cadastre, flux",
+      "description": "Exemple illustrant l'utilisation de 2 sources différentes du cadastre : geobretagne.fr (un flux vectoriel pour la Bretagne), cadastre.gouv.fr (un flux par commune)",
+      "level": "simple",
+      "url_source": "../demos/demos/cad/cad.xml",
+      "url_demo": "../../?config=ressources/demos/demos/cad/cad.xml"
+    },
+    {
+      "id": "8",
+      "title": "Base SIRENE",
+      "tags": "SIRENE",
+      "description": "Exemple de réutilisation de la base SIRENE.",
+      "level": "simple",
+      "url_source": "../demos/demos/sirene.xml",
+      "url_demo": "../../?config=ressources/demos/demos/sirene.xml"
+    },
+    {
+      "id": "9",
+      "title": "ElasticSearch",
+      "tags": "Configuration de la recherche, ElasticSearch",
+      "description": "Exemple de configuration afin de brancher le moteur de recherche sur un index ElasticSearch",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/els.xml",
+      "url_demo": "../../?config=ressources/demos/demos/els.xml"
+    },
+    {
+      "id": "10",
+      "title": "Fuse",
+      "tags": "Configuration de la recherche, Fuse",
+      "description": "Exemple de configuration pour faire une recherche sur une couche avec Fuse",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/fuse.xml",
+      "url_demo": "../../?config=ressources/demos/demos/fuse.xml"
+    },
+    {
+      "id": "11",
+      "title": "Custom layer & custom control",
+      "tags": "Couche vectorielle, custom layer, custom control",
+      "description": "Exemple d'utilisation d'une couche vectorielle (customlayer) avec un contôle personnalisé (customcontrol)",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/customlayer.xml",
+      "url_demo": "../../?config=ressources/demos/demos/customlayer.xml"
+    },
+    {
+      "id": "12",
+      "title": "Custom Layer ELS",
+      "tags": "Couche vectorielle, custom layer, Elasticsearch, index, filtre",
+      "description": "Utilisation d'un layer personnalisé dont la source est un index Elasticsearch et d'un contrôle personnalisé pour filtrer le contenu de la couche",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/els2.xml",
+      "url_demo": "../../?config=ressources/demos/demos/els2.xml"
+    },
+    {
+      "id": "13",
+      "title": "Couches exclusives",
+      "tags": "Exclusive",
+      "description": "Exemple d'utilisation de couches exclusives, c'est à dire une seule couche à la fois",
+      "level": "simple",
+      "url_source": "../demos/demos/exclusivelayer.xml",
+      "url_demo": "../../?config=ressources/demos/demos/exclusivelayer.xml"
+    },
+    {
+      "id": "15",
+      "title": "Template",
+      "tags": "Template, MST, panneau d'information, datavisualisation",
+      "description": "Exemple d'utilisation d'un template personnalisé pour l'affichage des résultats de l'interrogation des couches",
+      "level": "simple",
+      "url_source": "../demos/demos/template_rightpanel.xml",
+      "url_demo": "../../?config=ressources/demos/demos/template_rightpanel.xml"
+    },
+    {
+      "id": "16",
+      "title": "Template avec graphique",
+      "tags": "Template, datavisualisation, graphique, chartJs, dataviz",
+      "description": "Exemple d'utilisation d'un template personnalisé affichant des graphiques (librairie chartJs) lors de l'interrogation d'une couche",
+      "level": "avancé",
+      "url_source": "../demos/demos/dataviz.xml",
+      "url_demo": "../../?config=ressources/demos/demos/dataviz.xml"
+    },
+    {
+      "id": "17",
+      "title": "Fichiers géoréférencés",
+      "tags": "Image, datavisualisation, cadastre, géoréférencé, cadastre napoléonien",
+      "description": "Exemple d'utilisation de fichiers géoréférencés locaux - Tableaux d'assemblage du cadastre napoléonien",
+      "level": "avancé",
+      "url_source": "../demos/demos/napoleon.xml",
+      "url_demo": "../../?config=ressources/demos/demos/napoleon.xml"
+    },
+    {
+      "id": "18",
+      "title": "Filtre attributaire",
+      "tags": "Filtre, attribute",
+      "description": "Exemple d'utilisation de filtres attributaires basé sur une expression de type field like %value% et field like %value",
+      "level": "simple",
+      "url_source": "../demos/demos/attributefilter.xml",
+      "url_demo": "../../?config=ressources/demos/demos/attributefilter.xml"
+    },
+    {
+      "id": "19",
+      "title": "Géotraitement WPS",
+      "tags": "WPS, traitement, profil",
+      "description": "Exemple d'utilisation d'un service WPS (Profil en long)",
+      "level": "avancé",
+      "url_source": "../demos/demos/profile.xml",
+      "url_demo": "../../?config=ressources/demos/demos/profile.xml"
+    },
+    {
+      "id": "20",
+      "title": "Clusters",
+      "tags": "Couche vectorielle, cluster, custom layer",
+      "description": "Exemple de configuration d'un customlayer permettant d'afficher des données vectorielles en cluster",
+      "level": "avancé",
+      "url_source": "../demos/demos/cluster.xml",
+      "url_demo": "../../?config=ressources/demos/demos/cluster.xml"
+    },
+    {
+      "id": "21",
+      "title": "Données vectorielles",
+      "tags": "Couche vectorielle, custom layer, WFS",
+      "description": "Exemple d'utilisation de couches vectorielles avec des customlayers",
+      "level": "avancé",
+      "url_source": "../demos/demos/vector.xml",
+      "url_demo": "../../?config=ressources/demos/demos/vector.xml"
+    },
+    {
+      "id": "22",
+      "title": "Thématiques externes",
+      "tags": "Thématiques, réutilisation",
+      "description": "Exemple d'utilisation de thématiques externes. Les thématiques sont directement chargées depuis des instances mviewer distantes",
+      "level": "avancé",
+      "url_source": "../demos/demos/external.xml",
+      "url_demo": "../../?config=ressources/demos/demos/external.xml"
+    },
+    {
+      "id": "23",
+      "title": "Mode d'affichage simplifié",
+      "tags": "Affichage, mode simplifié",
+      "description": "Exemple d'utilisation du mviewer en affichage simplifié. Pour générer un affichage simplifié ou ultra-simplifié, il faut cliquer sur le bouton 'Partager une carte' et activer le mode désiré.",
+      "level": "simple",
+      "url_source": "",
+      "url_demo": "../?x=-324093&y=6166328&z=8&l=lycee*&lb=positron&mode=s&title=mviewer%20-%20mode%20simplifié"
+    },
+    {
+      "id": "24",
+      "title": "Géocodage automatique à partir d'un fichier csv",
+      "tags": "Géocodage, CSV",
+      "description": "Exemple d'utilisation du mviewer avec deux fichiers csv. Le premier fichier csv dispose d'informations localisables (adresse). il s'agit d'un fichier déposé sur un serveur. Le géocodage est opéré dynamiquement au chargement de la couche. Le deuxième fichier est est un géocodage effectué via un assistant à partir d'un fichier local",
+      "level": "simple",
+      "url_source": "../demos/demos/csv.xml",
+      "url_demo": "../../?config=ressources/demos/demos/csv.xml"
+    },
+    {
+      "id": "25",
+      "title": "Multi linguisme",
+      "tags": "Langue, traduction",
+      "description": "Exemple d'utilisation du mviewer avec une version française et une version anglaise. Cet exemple utilise un dictionnaire de traduction pour gérer le passage d'une langue à l'autre.",
+      "level": "simple",
+      "url_source": "../demos/demos/lang.xml",
+      "url_demo": "../../?config=ressources/demos/demos/lang.xml"
+    },
+    {
+      "id": "26",
+      "title": "Animation sur la recherche",
+      "tags": "Recherche, animation",
+      "description": "Exemple illustrant la possibilité de rajouter une animation lors de la recherche d'une entité dans la barre de navigation.",
+      "level": "simple",
+      "url_source": "../demos/demos/animate.xml",
+      "url_demo": "../../?config=ressources/demos/demos/animate.xml"
+    },
+    {
+      "id": "27",
+      "title": "Comparer 2 couches (swipe)",
+      "tags": "Swipe, outil, customlayer",
+      "description": "Exemple d'utilisation du mviewer avec un customlayer permettant de comparer 2 couches superposées à l'aide d'un balayage à partir d'une image satellite proposée par Maptiler",
+      "level": "avancé",
+      "url_source": "../demos/demos/swipe/swipe.xml",
+      "url_demo": "../../?config=ressources/demos/demos/swipe/swipe.xml"
+    },
+    {
+      "id": "28",
+      "title": "Tuiles vecteur",
+      "tags": "Vector tiles, tuiles, customlayer",
+      "description": "Exemple d'utilisation du mviewer avec un customlayer permettant d'exploiter trois services de tuiles vecteurs à partir d'OSM",
+      "level": "avancé",
+      "url_source": "../demos/demos/tile/tiles.xml",
+      "url_demo": "../../?config=ressources/demos/demos/tile/tiles.xml"
+    },
+    {
+      "id": "29",
+      "title": "Ajouter un élement personnalisé (plugin)",
+      "tags": "Composant personnalisé, Plugin mviewer, 3D, extension",
+      "description": "Exemple permettant d'ajouter un élement personnalisé (logo,button, etc..) à l'interface mviewer à l'aide d'un 'customComponent'",
+      "level": "avancé",
+      "url_source": "../demos/demos/customcomponent.xml",
+      "url_demo": "../../?config=ressources/demos/demos/customcomponent.xml"
+    },
+    {
+      "id": "30",
+      "title": "Plugin - Fullscreen",
+      "tags": "Plugin mviewer (customComponent), fullscreen",
+      "description": "Exemple d'application mobilisant le plugin 'fullscreen' pour afficher le mviewer en plein écran.",
+      "level": "avancé",
+      "url_source": "../demos/demos/fullscreen.xml",
+      "url_demo": "../../?config=ressources/demos/demos/fullscreen.xml"
+    },
+    {
+      "id": "31",
+      "title": "Plugin - Filtre",
+      "tags": "Plugin mviewer (customComponent), filtre",
+      "description": "Exemple d'application mobilisant le plugin 'filtre' afin de filtrer des données vectorielles selon différents attributs.",
+      "level": "avancé",
+      "url_source": "../demos/demos/filter/filter.xml",
+      "url_demo": "../../?config=ressources/demos/demos/filter/filter.xml"
+    },
+    {
+      "id": "39",
+      "title": "Plugin - Stat",
+      "tags": "Plugin mviewer (customComponent), stat",
+      "description": "Exemple d'application mobilisant le plugin 'stat' afin d'avoir des statistiques interactives selon le zoom de la carte.",
+      "level": "avancé",
+      "url_source": "../demos/demos/stats/stats.xml",
+      "url_demo": "../../?config=ressources/demos/demos/stats/stats.xml"
+    },
+    {
+      "id": "32",
+      "title": "Intégration en iframe",
+      "tags": "iframe, affichage, fullscreen",
+      "description": "Exemple d'intégration d'une application mviewer au sein d'une page web à l'aide d'une iframe. Le bouton Plein écran permet d'afficher la carte en plein écran.",
+      "level": "intermédiaire",
+      "url_source": "view-source:https://kartenn.region-bretagne.fr/kartoviz/demo/iframe.html",
+      "url_demo": "iframe.html"
+    },
+    {
+      "id": "33",
+      "title": "Calcul d'isochrone (plugin)",
+      "tags": "Isochrone, custom layer, custom control, vecteur",
+      "description": "Exemple d'utilisation combinée d'une couche personnalisée et d'un contrôle personnalisé. La couche personnalisée permet d'afficher le résultat d'un calcul d'isochrones avec un temps ou avec une distance, service fourni par l'IGN.",
+      "level": "simple",
+      "url_source": "../demos/demos/isochroneAddon.xml",
+      "url_demo": "../../?config=ressources/demos/demos/isochroneAddon.xml"
+    },
+    {
+      "id": "34",
+      "title": "Mise en surbrillance des entités séléctionnées",
+      "tags": "Style, select",
+      "description": "Exemple de personnalisation des entités sélectionnées sur la carte (couleur, opacité ...)",
+      "level": "simple",
+      "url_source": "../demos/demos/selectionstyles.xml",
+      "url_demo": "../../?config=ressources/demos/demos/selectionstyles.xml"
+    },
+    {
+      "id": "35",
+      "title": "Réutilisation des données IGN",
+      "tags": "IGN, données",
+      "description": "Exemple de réutilisation des données et services de l'IGN dans différentes normes (WFS,WMS,WMTS).",
+      "level": "simple",
+      "url_source": "../demos/demos/ign.xml",
+      "url_demo": "../../?config=ressources/demos/demos/ign.xml"
+    },
+    {
+      "id": "36",
+      "title": "Template - Itérer sur un champ json",
+      "tags": "JSON, template",
+      "description": "Exemple de template utilisant le paramètre de champ jsonfields afin d'itérer sur des listes sans code javascript. Dans le cas présenté ici, le champ communes contient la liste des communes pour chaque EPCI.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/jsonfields.xml",
+      "url_demo": "../../?config=ressources/demos/demos/jsonfields.xml"
+    },
+    {
+      "id": "37",
+      "title": "Télécharger des données (plugin)",
+      "tags": "Plugin mviewer (customComponent)filtre,télécharger",
+      "description": "Exemple d'application mobilisant le plugin 'filtre' afin de filtrer des données vectorielles et les télécharger ensuite au format geojson, csv ou shapefile.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/filter/filter_download.xml",
+      "url_demo": "../../?config=ressources/demos/demos/filter/filter_download.xml"
+    },
+    {
+      "id": "40",
+      "title": "Utilisation du thème avec identité visuelle de l'état",
+      "tags": "thème,CSS,état,design",
+      "description": "Exemple d'application utilisant le thème CSS avec l'identité visuelle de l'état français",
+      "level": "simple",
+      "url_source": "../demos/demos/theme-designfr/theme-designfr.xml",
+      "url_demo": "../../?config=ressources/demos/demos/theme-designfr/theme-designfr.xml"
+    },
+    {
+      "id": "41",
+      "title": "Mviewer Templates",
+      "tags": "Templates, mst, fiche d'information, modèle",
+      "description": "Application pour visualiser et télécharger différents modèles de fenêtres d'informations",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/mviewer_templates/config.xml",
+      "url_demo": "../../?config=ressources/demos/demos/mviewer_templates/config.xml"
+    },
+    {
+      "id": "42",
+      "title": "Zoomer sur une zone d'interêt (plugin)",
+      "tags": "zoom, plugin",
+      "description": "Exemple d'application mobilisant le plugin ZoomToArea permettant de zoomer sur des zones d'interêt",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/zoomtoarea.xml",
+      "url_demo": "../../?config=ressources/demos/demos/zoomtoarea.xml"
+    },
+    {
+      "id": "43",
+      "title": "Ajout d'une couche WMS ou via API features",
+      "tags": "CSW, WMS, ajout couche, API features",
+      "description": "Ajout depuis le mviewer d'une couche WMS distante à partir d'un flux WMS ou CSW ou d'une couche API features",
+      "level": "simple",
+      "url_source": "../demos/demos/addlayers.xml",
+      "url_demo": "../../?config=ressources/demos/demos/addlayers.xml"
+    },
+    {
+      "id": "44",
+      "title": "Exmple TMS avec flux IGN",
+      "tags": "TMS, IGN, style JSON",
+      "description": "Exemple de couche type TMS de l'IGN en utilisant un style json prédéfini.",
+      "level": "avancé",
+      "url_source": "../demos/demos/ignvectortms.xml",
+      "url_demo": "../../?config=ressources/demos/demos/ignvectortms.xml"
+    },
+    {
+      "id": "45",
+      "title": "Filtrer sur les couches",
+      "tags": "filtre, couche, plugin",
+      "description": "Ajout d'une extension pour filtrer les couches",
+      "level": "simple",
+      "url_source": "../demos/demos/layerfilter.xml",
+      "url_demo": "../../?config=ressources/demos/demos/layerfilter.xml"
+    },
+    {
+      "id": "46",
+      "title": "Infobulle sur couche",
+      "tags": "infobulle, tooltip",
+      "description": "Ajout d'une infobulle sur une couche vectorielle",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/mustache_tooltip.xml",
+      "url_demo": "../../?config=ressources/demos/demos/mustache_tooltip.xml"
+    },
+    {
+      "id": "47",
+      "title": "Utilisation d'API",
+      "tags": "API,georisques,gpu,cerema",
+      "description": "Utilisation de diverses API (CEREMA, Georisques, GPU...) dans l'interrogation d'une couche",
+      "level": "avancé",
+      "url_source": "../demos/demos/api.xml",
+      "url_demo": "../../?config=ressources/demos/demos/api.xml"
+    },
+    {
+      "id": "48",
+      "title": "Affichage COG / TIFF",
+      "tags": "cog,tiff,raster,custom,ndvi,reprojection",
+      "description": "Affichage d'un COG, d'un COG NDVI+NDWI (style avec classes OpenLayers) et d'un fichier TIFF reprojeté à la volée avec interrogation du pixel",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/cog-geotiff/cog.xml",
+      "url_demo": "../../?config=ressources/demos/demos/cog-geotiff/cog.xml"
+    },
+    {
+      "id": "49",
+      "title": "Mise en page personnalisée",
+      "tags": "print,impression,layout",
+      "description": "Mise en page d'une carte avec le module externe (addon) d'impression.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/print.xml",
+      "url_demo": "../../?config=ressources/demos/demos/print.xml"
+    },
+    {
+      "id": "50",
+      "title": "Outil de suivi de tracé GPS",
+      "tags": "plugin,GPX,trackview",
+      "description": "Mise en place d'un addon (trackview) pour visualiser dans mviewer des tracés GPS type GPX.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/trackview.xml",
+      "url_demo": "../../?config=ressources/demos/demos/trackview.xml"
+    },
+    {
+      "id": "51",
+      "title": "Outil de dessin type polygone",
+      "tags": "plugin,draw,dessin",
+      "description": "Mise en place d'un addon (draw) pour faire du dessin. Il est paramétré dans cet exemple pour le type polygone.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/draw/draw.xml",
+      "url_demo": "../../?config=ressources/demos/demos/draw/draw.xml"
+    },
+    {
+      "id": "52",
+      "title": "Outil de dessin tout type de géométrie",
+      "tags": "plugin,draw,dessin",
+      "description": "Mise en place d'un addon (draw) pour faire du dessin. Il est paramétré dans cet exemple pour tout type de géométrie (point, ligne, polygone).",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/draw/draw2.xml",
+      "url_demo": "../../?config=ressources/demos/demos/draw/draw2.xml"
+    },
+    {
+      "id": "53",
+      "title": "Datavisualisation issues de superset",
+      "tags": "superset,dataviz,template",
+      "description": "Insertion dans un template MST de datavisualisation réalisées à partir de l'outil superset.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/superset.xml",
+      "url_demo": "../../?config=ressources/demos/demos/superset.xml"
+    },
+    {
+      "id": "54",
+      "title": "Cadastre - Filtres et paramètres d'URL",
+      "tags": "cadastre, customcontrol, url, params, ban, apicarto",
+      "description": "Consultation de données du cadastre et zoom sur l'adresse ou une parcelle à partir de l'URL",
+      "level": "simple",
+      "url_source": "../demos/demos/cadastre.xml",
+      "url_demo": "../../?config=ressources/demos/demos/cadastre.xml&q=code_insee%3D35238%26section%3DAB%26numero%3D0001&qtype=cadastre"
+    },
+    {
+      "id": "55",
+      "title": "Fond de plan vectoriels",
+      "tags": "tms,fond de plan, data.gouv",
+      "description": "Utilisation des fonds de plan issus de openmaptiles.data.gouv.fr",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/tms_datagouv.xml",
+      "url_demo": "../../?config=ressources/demos/demos/tms_datagouv.xml"
+    },
+    {
+      "id": "56",
+      "title": "Ajouter des étiquettes à une couche (plugin)",
+      "tags": "label, étiquettes, vector, plugin",
+      "description": "Exemple d'application mobilisant le plugin label permettant d'ajouter des étiquettes à une couche vecteur ou cluster via un bouton dans la légende",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/label.xml",
+      "url_demo": "../../?config=ressources/demos/demos/label.xml"
+    },
+    {
+      "id": "57",
+      "title": "Filtre sur une commune avec paramètre dans l'URL",
+      "tags": "vector, filtre",
+      "description": "Exemple d'application permettant de filtrer sur une commune via un paramètre dans l'URL.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/ma_commune/config.xml",
+      "url_demo": "../../?config=ressources/demos/demos/ma_commune/config.xml&commune=22266"
+    },
+    {
+      "id": "58",
+      "title": "Filtres multiples pour une couche WMS",
+      "tags": "WMS, filtre",
+      "description": "Exemple d'application utilisant plusieurs filtres liés sur une couche WMS.",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/multifilter/multifilter.xml",
+      "url_demo": "../../?config=ressources/demos/demos/multifilter/multifilter.xml"
+    },
+    {
+      "id": "59",
+      "title": "MapFeaturesSelector",
+      "tags": "Téléchargement, csv",
+      "description": "Exemple d'application utilisant un plugin pour télécharger des données attributaires selon une emprise",
+      "level": "intermédiaire",
+      "url_source": "../demos/demos/mapfeatures.xml",
+      "url_demo": "../../?config=ressources/demos/demos/mapfeatures.xml"
+    },
+    {
+      "id": "60",
+      "title": "Thème personnalisé",
+      "tags": "Style, thème, personnalisation",
+      "description": "Exemple d'application avec un thème .css permettant de personnaliser l'interface du mviewer",
+      "level": "simple",
+      "url_source": "../demos/demos/customstyle.css",
+      "url_demo": "../../?config=ressources/demos/demos/customtheme.xml"
+    }
+  ]
+}
