@@ -51,7 +51,7 @@
         name="Sites de baignade"
         type="customlayer"
         customcontrol="true"
-        customcontrolpath="./label/customcontrols"
+        customcontrolpath="./ressources/demos/demos/labels/customcontrols"
         infoformat="text/html"
         expanded="true"
         url="./label/customlayers/baignade.js"

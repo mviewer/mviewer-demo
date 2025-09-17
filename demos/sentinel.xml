@@ -33,6 +33,7 @@
             vectorlegend="true"
             expanded="true"
             customcontrol="true"
+            customcontrolpath="./ressources/demos/customcontrols"
             tooltipcontent="{{date}} - nuages: {{cloudCoverPercentage}}%"
             fields="id,date,time,cloudCoverPercentage"
             aliases="id,date,time,couverture nuageuse"

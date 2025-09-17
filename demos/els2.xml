@@ -26,6 +26,7 @@
             type="customlayer" opacity="0.8"
             url="ressources/demos/customlayers/inventaire.js"
             customcontrol="true"
+            customcontrolpath="./ressources/demos/customcontrols"
             vectorlegend="false"
             legendurl="./recensement_etudes.jpg"
             expanded="true"

@@ -28,6 +28,7 @@
             type="customlayer"
             url="ressources/demos/customlayers/napoleo.js"
             customcontrol="true"
+            customcontrolpath="./ressources/demos/customcontrols"
             visible="true"     
             expanded="true"
             metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b4080a88-798d-4533-9582-ec9a985d8102"

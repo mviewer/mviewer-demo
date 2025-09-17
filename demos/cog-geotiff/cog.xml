@@ -20,11 +20,11 @@
     <searchparameters bbox="false" localities="true" features="false" />
     <themes>
         <theme name="COG" collapsed="false" id="COG" icon="fas fa-users">
-            <layer id="ortho_cog" name="Cog" customcontrol="true" customcontrolpath="./cog-geotiff/customcontrols/" visible="true" tiled="true" type="customlayer" queryable="false" url="./cog-geotiff/ortho_cog.js" attribution="https://openlayers.org/en/latest/examples/cog.html" />
-            <layer id="ndvi_cog" name="NDVI+NDWI" customcontrol="true" customcontrolpath="./cog-geotiff/customcontrols/" visible="true" tiled="true" type="customlayer" queryable="false" url="./cog-geotiff/ndvi_cog.js" attribution="https://openlayers.org/en/latest/examples/cog-math-multisource.html" />
+            <layer id="ortho_cog" name="Cog" customcontrol="true" customcontrolpath="./ressources/demos/demos/cog-geotiff/customcontrols/" visible="true" tiled="true" type="customlayer" queryable="false" url="./cog-geotiff/ortho_cog.js" attribution="https://openlayers.org/en/latest/examples/cog.html" />
+            <layer id="ndvi_cog" name="NDVI+NDWI" customcontrol="true" customcontrolpath="./ressources/demos/demos/cog-geotiff/customcontrols/" visible="true" tiled="true" type="customlayer" queryable="false" url="./cog-geotiff/ndvi_cog.js" attribution="https://openlayers.org/en/latest/examples/cog-math-multisource.html" />
         </theme>
         <theme name="TIFF" collapsed="false" id="tiff" icon="fas fa-users">
-            <layer id="tiff" name="tiff" visible="true" customcontrol="true" customcontrolpath="./cog-geotiff/customcontrols/" tiled="true" type="customlayer" queryable="false" url="./cog-geotiff/tiff.js" attribution="tiff maddog" expanded="true"/>
+            <layer id="tiff" name="tiff" visible="true" customcontrol="true" customcontrolpath="./ressources/demos/demos/cog-geotiff/customcontrols/" tiled="true" type="customlayer" queryable="false" url="./cog-geotiff/tiff.js" attribution="tiff maddog" expanded="true"/>
         </theme>
     </themes>
 </config>

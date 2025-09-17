@@ -20,10 +20,10 @@
         <layer id="sentinel" name="Mes critères de séléction d'image" visible="true" queryable="false"
             legendurl="https://www.sentinel-hub.com/img/logo.svg"
             type="customlayer"
-            customcontrolpath="./sentinel/control"
             opacity="1"
-            url="./sentinel/layer/sentinel.js"
+            url="./ressources/demos/demos/sentinel/layer/sentinel.js"
             customcontrol="true"
+            customcontrolpath="./ressources/demos/demos/sentinel/control"
             expanded="true"
             metadata=""
             metadata-csw="">

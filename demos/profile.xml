@@ -27,6 +27,7 @@
             type="customlayer" opacity="0.8" legendurl="img/blank.gif"
             url="ressources/demos/customlayers/profile.js"
             customcontrol="true"
+            customcontrolpath="./ressources/demos/customcontrols"
             expanded="true"           
             attribution="Source: GéoBretagne"
             metadata=""
