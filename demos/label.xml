@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-  <application id="label" lang="fr" langfile="./demo.i18n.json"
+  <application id="label" lang="fr" langfile="./ressources/demos/demos/demo.i18n.json"
     title="Plugin - Label" 
     htmltitle="Label &lt;span class=&quot;badge text-bg-light&quot;&gt;Plugin&lt;/span&gt;&lt;/div&gt;"    
     showhelp="false" logo="" style="css/themes/default.css"
@@ -54,7 +54,7 @@
         customcontrolpath="./ressources/demos/demos/labels/customcontrols"
         infoformat="text/html"
         expanded="true"
-        url="./label/customlayers/baignade.js"
+        url="./ressources/demos/demos/label/customlayers/baignade.js"
         visible="true"
         index="1"
         infohighlight="true"

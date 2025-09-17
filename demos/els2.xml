@@ -24,17 +24,17 @@
     <theme name="Elasticsearch"  collapsed="false" id="elasticsearch" icon="fas fa-search">
         <layer id="inventaire" name="Rechercher dans l'inventaire" visible="true" queryable="true"
             type="customlayer" opacity="0.8"
-            url="ressources/demos/customlayers/inventaire.js"
+            url=".ressources/demos/customlayers/inventaire.js"
             customcontrol="true"
             customcontrolpath="./ressources/demos/customcontrols"
             vectorlegend="false"
-            legendurl="./recensement_etudes.jpg"
+            legendurl="./ressources/demos/demos/recensement_etudes.jpg"
             expanded="true"
             tooltip="true" tooltipenabled="true" tooltipcontent="{{title}} "
             attribution="Source: Région Bretagne"
             metadata=""
             metadata-csw="">
-            <template url="templates/inventaire.mst" />
+            <template url="./ressources/demos/templates/inventaire.mst" />
         </layer>
     </theme>
 </themes>

@@ -28,7 +28,7 @@
                 yfield="latitude"
                 tooltipcontent="{{nom}}"
                 fields="nom,adresse,postcode"
-                url="./demo.csv"
+                url="./ressources/demos/demos/demo.csv"
                 tooltip="true"
                 searchable="true"
                 searchengine="fuse"

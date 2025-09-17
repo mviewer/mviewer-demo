@@ -30,7 +30,7 @@
                 fusesearchkeys="dc_title,dc_contributor"
                 fusesearchresult="{{date}} {{dc_title}} {{dc_contributor}} {{codepostal}}"
                 tooltipcontent="{{dc_title}} et {{mv_clustercount}} autre(s) dossier(s)">
-                <template url="./cluster.mst"/>
+                <template url="./ressources/demos/demos/cluster.mst"/>
                 </layer>
         </theme>
     </themes>

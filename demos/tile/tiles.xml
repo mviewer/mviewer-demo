@@ -23,7 +23,7 @@
         <theme name="Tuiles vectorielles"  collapsed="false" id="maptiler" icon="fas fa-globe">
                 <layer id="maptiler" name="maptiler" visible="true" queryable="true"
                     type="customlayer" opacity="0.9" legendurl="https://www.maptiler.com/img/logos/maptiler-logo.svg"
-                    url="./tile/maptiler.js"
+                    url="./ressources/demos/demos/tile/maptiler.js"
                     expanded="true" exclusive="true"
                     attribution="&lt;a href=&quot;https://www.maptiler.com/copyright/&quot; target=&quot;_blank&quot;&gt;&amp;copy; Maptiler&lt;/a&gt; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;&amp;copy; OpenStreetMap contributors&lt;/a&gt;"
                     metadata=""
@@ -39,7 +39,7 @@
                 </layer>-->
                  <layer id="mapbox" name="mapbox" visible="false" queryable="true"
                     type="customlayer" opacity="0.9" legendurl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mapbox_logo_2017.svg/512px-Mapbox_logo_2017.svg.png"
-                    url="./tile/mapbox.js"
+                    url="./ressources/demos/demos/tile/mapbox.js"
                     expanded="true" exclusive="true"
                     attribution="&lt;a href=&quot;https://www.mapbox.com/map-feedback/&quot;&gt;Mapbox&lt;/a&gt; © &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap contributors&lt;/a&gt;"
                     metadata=""

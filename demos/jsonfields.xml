@@ -18,7 +18,7 @@
         url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
         jsonfields="communes"
         visible="true" infoformat="application/vnd.ogc.gml" queryable="true" infopanel="right-panel">
-        <template url="./jsonfields.mst"></template>
+        <template url="./ressources/demos/demos/jsonfields.mst"></template>
         </layer>       
     </theme> 
 </themes>

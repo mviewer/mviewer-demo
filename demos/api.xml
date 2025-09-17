@@ -34,7 +34,7 @@
 				attribution="IGN - ADMIN EXPRESS" 
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5">	
-				<template url="./api.mst"></template>
+				<template url="./ressources/demos/demos/api.mst"></template>
 			</layer>
 		</theme>
     </themes>

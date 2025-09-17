@@ -47,7 +47,7 @@
             queryable="true"
             filter="operation = 'Patrimoines des sports en Bretagne'"
             infopanel="right-panel">
-            <template url="./carousel.mst"></template>
+            <template url="./ressources/demos/demos/carousel.mst"></template>
         </layer> 
     </theme> 
 </themes>

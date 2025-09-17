@@ -55,7 +55,7 @@
                 maxzoom="15"
                 styleurl="https://wxs.ign.fr/static/vectorTiles/styles/PCI/pci.json"
                 infopanel="right-panel"
-                legendurl="./lycee.png"
+                legendurl="./ressources/demos/demos/lycee.png"
                 metadata="https://geoservices.ign.fr/services-web-essentiels"
                 attribution="Source: IGN"
                 style="pci"

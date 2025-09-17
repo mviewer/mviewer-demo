@@ -11,7 +11,7 @@
 		<theme name="Exemples de bonnes pratiques :" collapsed="false" id="bonnes_pratiques" icon="far fa-user-circle">
 			<layer id="adaptation_changement_climatique" name="Ecoquartiers et aménagements durables" visible="true" tiled="true" expanded="true" queryable="true"
 					filter = "type = 'Quartier'" infoformat="application/vnd.ogc.gml" featurecount="50" style="environment:Ecoquartiers" url="https://geoportal.georhena.eu/geoserver/environment/ows?service=wms" attribution="Source: Trion ; GeoRhena" legendurl="">
-				<template url="./lang/customcontrols/exemple_couche_1"></template>
+				<template url="./ressources/demos/demos/lang/customcontrols/exemple_couche_1"></template>
 			</layer>
 		</theme>
 		<theme name="Eléments de contexte" collapsed="true" id="context" icon="fas fa-cubes">

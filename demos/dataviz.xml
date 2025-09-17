@@ -20,11 +20,11 @@
     <themes mini="true">
     	<theme name="Lycée"  collapsed="true" id="habitant" icon="fas fa-users">
     		<layer id="lycee_resultat_bac" name="Résultats BAC"  visible="true"  queryable="true"
-                    legendurl="./lycee.png"
+                    legendurl="./ressources/demos/demos/lycee.png"
                     fields="nom,code_rne,photo,secteur_li"
                     aliases="Nom,Code,Photo,Secteur"
                     infoformat="application/vnd.ogc.gml" type="customlayer" featurecount="20" infopanel="right-panel"
-	                url="./lycee_resultat_bac.js"
+	                url="./ressources/demos/demos/lycee_resultat_bac.js"
 	                attribution="Ministère de l'éducation nationale"
                     searchable="true"
                     searchengine="fuse"
@@ -32,7 +32,7 @@
                     fusesearchresult="{{nom}}"
 	                metadata="https://data.education.gouv.fr/explore/dataset/fr-en-indicateurs-de-resultat-des-lycees-denseignement-general-et-technologique/information/"
 	                metadata-csw="">
-		            <template url="./lycee_resultat_bac.mst"></template>
+		            <template url="./ressources/demos/demos/lycee_resultat_bac.mst"></template>
 		        </layer>
 		</theme>
 

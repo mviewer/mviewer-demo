@@ -44,7 +44,7 @@
             toplayer="true"
             name="Population des communes"
             visible="true"
-            url="./stats/customlayers/population_communes.js" 
+            url="./ressources/demos/demos/stats/customlayers/population_communes.js" 
             queryable="true"
             type="customlayer"
             opacity="1"     
@@ -66,7 +66,7 @@
             style=""
             opacity="1"
             legendurl="img/legend/commune.png" 
-            url="./filter/customlayers/communes.js" 
+            url="./ressources/demos/demos/filter/customlayers/communes.js" 
             tooltip="true"
             attribution="Source: GéoBretagne" />
     </theme>

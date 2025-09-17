@@ -39,7 +39,7 @@
             attribution="Source: IGN"
             style="adminexpress"
             url="https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf">
-            <template url="./ignvectortms.mst"></template>
+            <template url="./ressources/demos/demos/ignvectortms.mst"></template>
         </layer>
         <layer
             id="pciign"
