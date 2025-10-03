@@ -70,7 +70,7 @@ mviewer.customControls.inventaire = (function () {
     init: function () {
       // mandatory - code executed when panel is opened
       if (!_collection) {
-        $.getJSON("/ressources/demos/demos/collection.json", function (data) {
+        $.getJSON("demo/collection.json", function (data) {
           _collection = data;
           _initForm();
         });

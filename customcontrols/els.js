@@ -17,7 +17,7 @@ mviewer.customControls.els = (function () {
 
     init: function () {
       // mandatory - code executed when panel is opened
-      $.getJSON("/ressources/demos/demos/collection.json", function (data) {
+      $.getJSON("demo/collection.json", function (data) {
         $("#els_search_queries").tagsinput({
           typeahead: {
             source: data,
