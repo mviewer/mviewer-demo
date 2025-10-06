@@ -24,6 +24,6 @@
 <themes>
 </themes>
 <extensions>
-    <extension type="component" id="logo" path="demo/addons" />
+    <extension type="component" id="logo" path="addons" />
 </extensions>
 </config>

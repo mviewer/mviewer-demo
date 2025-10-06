@@ -21,7 +21,7 @@
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
 </baselayers>
 <extensions>
-        <extension type="component" id="stats" path="demo/addons"/>
+        <extension type="component" id="stats" path="addons"/>
 </extensions>
 <themes mini="true" legendmini="true">
     <theme name="Structures"  collapsed="true" id="demo" icon="fas fa-laptop-house">

@@ -19,7 +19,7 @@
     <olscompletion url="https://data.geopf.fr/geocodage/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la geoplateforme IGN"/>
     <searchparameters bbox="false" localities="true" features="false" />   
     <extensions>
-        <extension type="component" id="layerfilter" path="demo/addons"/>
+        <extension type="component" id="layerfilter" path="addons"/>
     </extensions>
     <themes> 
         <theme name="Population"  collapsed="false" id="habitant" icon="fas fa-users">
@@ -119,7 +119,7 @@
         <layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
                 type="customlayer" style="" opacity="1" legendurl="img/legend/commune.png" 
-                url="customlayers/commune.js" 
+                url="demo/customlayers/commune.js" 
                 tooltip="true" tooltipenabled="true"
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5" 
@@ -128,7 +128,7 @@
                 fields="nom_geo" aliases="Nom"
                 customcontrol="true"
                 type="customlayer" style="" opacity="1" legendurl="img/legend/epci.png" 
-                url="customlayers/epci.js" 
+                url="demo/customlayers/epci.js" 
                 tooltip="true" tooltipenabled="true"
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 

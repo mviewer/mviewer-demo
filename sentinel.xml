@@ -36,7 +36,7 @@
             tooltipcontent="{{date}} - nuages: {{cloudCoverPercentage}}%"
             fields="id,date,time,cloudCoverPercentage"
             aliases="id,date,time,couverture nuageuse"
-            url="customlayers/s2tile.js"
+            url="demo/customlayers/s2tile.js"
             attribution="Source : Sentinel Hub."
             metadata="https://www.sentinel-hub.com/develop/documentation/eo_products/Sentinel2EOproducts"
             metadata-csw="md" >

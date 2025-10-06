@@ -16,7 +16,7 @@
     <searchparameters bbox="false" localities="true" features="false" /> 
 
     <extensions>
-		<extension type="component" id="zoomToArea" path="demo/addons"/>
+		<extension type="component" id="zoomToArea" path="addons"/>
 	</extensions>
 
     <themes mini="true" legendmini="false">          

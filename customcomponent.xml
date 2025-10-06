@@ -12,7 +12,7 @@
     togglealllayersfromtheme="false">
 </application>
 <extensions>
-    <extension type="component" id="graph3d" path="demo/addons"/>
+    <extension type="component" id="graph3d" path="addons"/>
 </extensions>
 <mapoptions maxzoom="18" projection="EPSG:3857" center="-230072,6204699" zoom="14" />
 <baselayers style="default">

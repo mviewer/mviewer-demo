@@ -31,7 +31,7 @@
     <searchparameters bbox="false" localities="true" features="false" />   
 
     <extensions>
-        <extension type="component" id="panoramax" path="demo/addons"/>
+        <extension type="component" id="panoramax" path="addons"/>
     </extensions>
 
     <themes>                  

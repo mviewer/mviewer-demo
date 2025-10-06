@@ -24,7 +24,7 @@
 <themes>
 </themes>
 <extensions>
-    <extension type="component" id="fullscreen" path="demo/addons" />
+    <extension type="component" id="fullscreen" path="addons" />
 </extensions>
 <themes> 
         <theme name="Transports"  collapsed="true" id="transport" icon="fas fa-arrow-right">

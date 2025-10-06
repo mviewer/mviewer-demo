@@ -21,7 +21,7 @@
     <searchparameters bbox="false" localities="true" features="false"/>
 
     <extensions>    
-        <extension type="component" id="isochroneAddon" path="demo/addons"/>
+        <extension type="component" id="isochroneAddon" path="addons"/>
     </extensions>
     <themes>
         <theme name="Géodésie"  id="geodesie" collapsed="false" icon="fas fa-caret-right">
@@ -57,7 +57,7 @@
 				queryable="true" 
                 infoformat="text/html" featurecount="5" 
 				tooltip="true"	tooltipcontent="{{nom}}"				
-				url="customlayers/pnr_ign.js" 
+				url="demo/customlayers/pnr_ign.js" 
 				attribution="IGN" 
 				metadata=""
 				metadata-csw="" />	

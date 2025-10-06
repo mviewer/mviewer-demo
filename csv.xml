@@ -15,7 +15,7 @@
     <olscompletion url="https://data.geopf.fr/geocodage/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la geoplateforme IGN"/>
     <searchparameters bbox="false" localities="false" features="false" />
     <extensions>
-        <extension type="component" id="fileimport" path="demo/addons"/>
+        <extension type="component" id="fileimport" path="addons"/>
     </extensions>
     <themes>
         <theme name="csv"  collapsed="false" id="csv" icon="fas fa-users">

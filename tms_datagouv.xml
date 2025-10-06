@@ -29,11 +29,11 @@
 			url="https://openmaptiles.data.gouv.fr/data/planet-vector/{z}/{x}/{y}.pbf" 
 			styleurl="https://openmaptiles.data.gouv.fr/styles/fiord-color/style.json" style="openmaptiles" attribution="IGN"  ></baselayer>
     </baselayers> 
-    <olscompletion url="https://wxs.ign.fr/essentiels/ols/apis/completion" type="geoportail" attribution="IGN"/>
+    <olscompletion url="https://data.geopf.fr/geocodage/completion" type="geoportail" attribution="IGN"/>
     <searchparameters bbox="true" localities="true" features="true"/>
 
     <extensions>    
-        <extension type="component" id="isochroneAddon" path="demo/addons"/>
+        <extension type="component" id="isochroneAddon" path="addons"/>
     </extensions>
     <themes>
         <theme name="Limites administratives"  collapsed="true" id="territoire" icon="fas fa-globe"> 

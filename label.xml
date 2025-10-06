@@ -39,7 +39,7 @@
   </baselayers>
 
   <extensions>
-    <extension type="component" id="label" path="demo/addons" />
+    <extension type="component" id="label" path="addons" />
   </extensions>
 
   <themes mini="true" legendmini="false">

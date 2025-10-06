@@ -14,7 +14,7 @@
     <proxy url=""/>
 	<searchparameters bbox="false" localities="false" features="false" static="false" querymaponclick="true" closeafterclick="true" inputlabel="Saisir votre adresse"/>
     <extensions>
-      <extension type="component" id="isochroneAddon" path="demo/addons"/>
+      <extension type="component" id="isochroneAddon" path="addons"/>
     </extensions>
     <themes>
         <theme name="Transport collectif régional"  collapsed="true" id="transport" icon="train">

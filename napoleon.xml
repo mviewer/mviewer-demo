@@ -26,7 +26,7 @@
             legendurl="img/blank.gif"
             name="Tableau d'assemblage"
             type="customlayer"
-            url="customlayers/napoleo.js"
+            url="demo/customlayers/napoleo.js"
             customcontrol="true"
             visible="true"     
             expanded="true"

@@ -2,7 +2,7 @@
   mviewer.customLayers.population_communes = {};
   mviewer.customLayers.population_communes.layer = new ol.layer.Vector({
     source: new ol.source.Vector({
-      url: "data/pop_communes.geojson",
+      url: "demo/data/pop_communes.geojson",
       format: new ol.format.GeoJSON(),
     }),
     style: new ol.style.Style({

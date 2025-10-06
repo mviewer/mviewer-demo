@@ -53,7 +53,7 @@
                 queryable="true"
                 filterstyle="borne_limite_propriete"
                 maxzoom="15"
-                styleurl="https://wxs.ign.fr/static/vectorTiles/styles/PCI/pci.json"
+                styleurl="https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
                 infopanel="right-panel"
                 legendurl="demo/lycee.png"
                 metadata="https://geoservices.ign.fr/services-web-essentiels"

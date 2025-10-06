@@ -22,7 +22,7 @@
     </baselayers>
 
     <extensions>
-        <extension type="component" id="streetview" path="demo/addons"/>
+        <extension type="component" id="streetview" path="addons"/>
     </extensions>
 
     <themes>

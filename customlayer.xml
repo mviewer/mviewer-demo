@@ -24,7 +24,7 @@
     <theme name="Morbihan"  collapsed="false" id="ocs56" icon="far fa-file-alt">
         <layer id="ocs56" name="Couverture" visible="true" queryable="true"
             type="customlayer" opacity="0.5" legendurl="img/blank.gif"
-            url="customlayers/ocs56.js"
+            url="demo/customlayers/ocs56.js"
             customcontrol="true"
             expanded="true"
             tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "

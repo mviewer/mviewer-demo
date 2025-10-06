@@ -30,7 +30,7 @@
             <layer id="sirene" name="Carte de chaleur des débits de boisson" visible="false"
 				queryable="false"
                 type="customlayer"
-                url="customlayers/sirene.js"
+                url="demo/customlayers/sirene.js"
                 legendurl="img/legend/heatmap.png"
 				attribution="GéoBretagne"
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6bf9d921-b8eb-4e5f-bbb5-546f7c40dab3"
