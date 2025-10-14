@@ -20,7 +20,7 @@ https://github.com/mviewer/mviewer-demo/blob/main/index.html
 
 Si vous avez récupéré toutes les sources mviewer et ses submodules. Cette page sera accessible sous l'URL du type : 
 
-https://monsite.fr/mviewer/demos/index.html
+https://monsite.fr/mviewer/demo/index.html
 
 # Comment faire ?
 
@@ -35,10 +35,10 @@ Vous trouverez ici les étapes à suivre pour ajouter votre démo et la tester.
 3. Créer une branche wms-attribute-filter depuis la branche main
 4. Ajouter un répertoire `wmsattributefilter` (tel que le chemin sera `mviewer-demo/wmsattributefilter`)
 5. Dans ce répertoire, ajouter vos configuration XML customlayer, customcontrols, json, image, et autres ressources nécessaires...
-6. Votre carte sera donc accessible sous `mviewer?config=demos/wmsattributefilter/wmsattributefilter.xml` (le nom du XML est à adapter selon ce que vous souhaitez)
+6. Votre carte sera donc accessible sous `mviewer?config=demo/wmsattributefilter/wmsattributefilter.xml` (le nom du XML est à adapter selon ce que vous souhaitez)
 7. Pousser vos modifications sur votre branche
 8. faire une pull request vers le dépôt original mviewer/mviewer-demo
-9. A la validation ou revue de la pull request, votre démo sera accessible dans `https://github.com/mviewer/mviewer-demo/mviewer-demo/wmsattributefilter`
+9. A la validation ou revue de la pull request, votre démo sera accessible dans `https://github.com/mviewer/mviewer-demo/demo/wmsattributefilter`
 10. Après la validation de la pull request, pensez à supprimer votre branche de votre fork pour plus de clarté
 
 ## Tester votre demo avec votre fork
@@ -61,15 +61,15 @@ Vous devez donc cloner mviewer sans ses sous-modules (mviewer-demo étant un sou
 
 5. Sauvegarder et fermer le fichier
 
-6. Récupérez toutes les sources des submodules `/addons` et `/demos` avec cette commande :
+6. Récupérez toutes les sources des submodules `/addons` et `/demo` avec cette commande :
    ```
    git submodule update --init
    ```
 
-7. Vous avez maintenant les répertoires mviewer/addons et `mviewer/demos` (qui pointe vers votre fork). Ces deux répertoires contiennent des clone des dépôts liés sur la branche `main`.
-9. Changez donc de branche pour utiliser votre branche de travail dans `mviewer/demos` (`mabranche` est le nom de votre branche à adapter)
+7. Vous avez maintenant les répertoires mviewer/addons et `mviewer/demo` (qui pointe vers votre fork). Ces deux répertoires contiennent des clone des dépôts liés sur la branche `main`.
+9. Changez donc de branche pour utiliser votre branche de travail dans `mviewer/demo` (`mabranche` est le nom de votre branche à adapter)
    ```
-   cd mviewer/demos
+   cd mviewer/demo
    git checkout mabranche
    ```
 11. Vous pouvez maintenant tester votre démo dans le mviewer que vous venez de cloner
@@ -84,7 +84,7 @@ Démarrez ensuite votre mviewer (soit via nginx soit via node js), et vous pourr
 
 Pour les développements, vous pouvez utiliser le serveur Node.js (v20 +) avec Vite.js ou un serveur web classique comme Nginx ou Apache.
 
-> Note : Si vous exécutez ce catalogue depuis le dépôt mviewer-demos, vous ne pourrez tester l'accès aux cartes (voir section plus bas). Vous devrez installer la version complète du mviewer avec ses submodules ([voir la documentation](https://mviewerdoc.readthedocs.io/fr/latest/doc_tech/deploy.html#deployer-une-version-complete)).
+> Note : Si vous exécutez ce catalogue depuis le dépôt mviewer-demo, vous ne pourrez tester l'accès aux cartes (voir section plus bas). Vous devrez installer la version complète du mviewer avec ses submodules ([voir la documentation](https://mviewerdoc.readthedocs.io/fr/latest/doc_tech/deploy.html#deployer-une-version-complete)).
 
 Démarrage du serveur de test avec `Node.js` : 
 
@@ -94,6 +94,6 @@ npm run dev
 ```
 
 - Mviewer est accessible sur `localhost:5173`.
-- Le catalogues est accessible sur `localhost:5173/demos/index.html`
+- Le catalogues est accessible sur `localhost:5173/demo/index.html`
 
 
