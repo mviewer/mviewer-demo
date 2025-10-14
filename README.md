@@ -1,6 +1,4 @@
-# Version
-
-Mviewer v4 ou supérieure, compatible avec Bootstrap 5.
+> **Version**: Mviewer v4 ou supérieure, compatible avec Bootstrap 5.
 
 # mviewer-demo
 
