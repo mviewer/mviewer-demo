@@ -10,6 +10,9 @@ Ce dépôt contient toutes les démonstrations de l’outil mviewer.
 
 Le catalogue permet de retrouver une démo et de la tester.
 
+> ATTENTION : le test des démos avec le catalogue nécessite d'installer mviewer avec le sous-module ([voir documentation](https://mviewerdoc.readthedocs.io/fr/latest/doc_tech/deploy.html#deployer-une-version-complete))
+> Vous devez donc utilisez ce type d'installation pour développer avec le catalogue
+
 Il est localisé dans https://github.com/mviewer/mviewer-demo/catalogue.
 
 Vous y trouverez un [README dédié](https://github.com/mviewer/mviewer-demo/tree/main/catalogue).
