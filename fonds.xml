@@ -24,10 +24,10 @@
 		<baselayer visible="false" id="photo_ir" thumbgallery="img/basemap/ir.jpg" title="Ortho actuelle IGN IR" label="Ortho actuelle IGN IR" type="WMTS" 
 			url="https://tile.geobretagne.fr/photo/service" layers="ORTHOIMAGERY.ORTHOPHOTOS.IRC" format="image/png" 
             attribution="IGN" matrixset="PM" fromcapacity="false" style="default"/>
-        <baselayer  type="WMTS" id="ortho2" label="Photo aérienne IGN" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+        <baselayer  type="WMTS" id="ortho2" label="Photo aérienne IGN" title="GéoPortail" thumbgallery="img/basemap/ortho.jpg"
             url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
-        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
+        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
             url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="fake" id="fake" label="Carroyage" title="Carroyage" thumbgallery="img/basemap/grid.png" visible="false"  />
