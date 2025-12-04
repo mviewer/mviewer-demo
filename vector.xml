@@ -4,7 +4,7 @@
     <searchparameters localities="false" features="true" bbox="false"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" querymode="match" linkid="search_id" version="1.4"/>
     <baselayers style="default">
-        <baselayer  type="WMTS" id="ortho" label="Photo aérienne IGN" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+        <baselayer  type="WMTS" id="ortho" label="Photo aérienne IGN" title="GéoPortail" thumbgallery="img/basemap/ortho.jpg"
             url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="OSM" id="osm1" attributioncollapsible="false" label="OpenStreetMap" title="OpenSTreetMap" thumbgallery="img/basemap/osm.png" 
