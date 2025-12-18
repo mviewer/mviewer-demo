@@ -1,7 +1,7 @@
 const code_insee = API.commune ?? undefined;
 
 const url =
-  "https://geobretagne.fr/geoserver/ign/wfs?SERVICE=WFS&request=GetFeature&version=1.1.0&typeName=commune_metro&outputFormat=application%2Fjson&srsName=EPSG:3857";
+  "https://geobretagne.fr/geoserver/ign/wfs?SERVICE=WFS&request=GetFeature&version=1.1.0&typeName=commune_metro&outputFormat=json&srsName=EPSG:3857";
 
 let style = new ol.style.Style({
   stroke: new ol.style.Stroke({ color: "#000", width: 2 }),
