@@ -31,10 +31,10 @@ dic_baselayer = [
         'label': 'OpenStreetMap',
         'title': 'OpenStreetMap',
         'thumbgallery': 'img/basemap/osm.png',
-        'url': 'http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        'url': 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
         'visible': 'true',
-        'attribution': '© MapQuest. Données : les contributeurs d\'<a href=\'http://www.openstreetmap.org/\'' \
-                         'target=\'_blank\'>OpenStreetMap </a>, <a href=\'http://www.openstreetmap.org/copyright\''\
+        'attribution': '© MapQuest. Données : les contributeurs d\'<a href=\'https://www.openstreetmap.org/\'' \
+                         'target=\'_blank\'>OpenStreetMap </a>, <a href=\'https://www.openstreetmap.org/copyright\''\
                          'target=\'_blank\'>ODbL </a>'
      },
     {

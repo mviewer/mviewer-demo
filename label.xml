@@ -22,7 +22,7 @@
 
   <baselayers style="gallery">
     <baselayer visible="false" type="OSM" id="osm1" label="OpenStreetMap" title="OpenStreetMap"
-      thumbgallery="img/basemap/osm.png" url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      thumbgallery="img/basemap/osm.png" url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
     <baselayer visible="false" type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb"
       thumbgallery="img/basemap/darkmatter.png"
       url="http://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" maxzoom="20"
