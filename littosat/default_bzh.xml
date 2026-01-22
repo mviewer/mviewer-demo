@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application id="littosat_bzh" title="Littosat Bretagne" mouseposition="true" logo="demo/littosat/img/logo_littosatBzh.png" titlehelp=" " showhelp="true" help="demo/littosat/home.html" measuretools="true" exportpng="true" style="demo/littosat/css/littosat_styleapp.css" togglealllayersfromtheme="true"/>
+    <application id="littosat_bzh" title="Littosat Bretagne" mouseposition="true" logo="demo/littosat/img/logo_littosatBzh.png" titlehelp=" " showhelp="true" help="demo/littosat/home.html" measuretools="true" exportpng="true" style="" togglealllayersfromtheme="true"/>
     <mapoptions maxzoom="16" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
     <baselayers style="default"><!-- style="default"||gallery" -->

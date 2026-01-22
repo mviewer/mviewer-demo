@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application id="littosat_normandie" title="Littosat Normandie" mouseposition="true" logo="https://littosat.hytech-imaging.fr/littosat-normandie/resources/icon_oeil_hytech_imaging.png" titlehelp=" " showhelp="true" help="demo/littosat/info.html" measuretools="true" exportpng="true" style="demo/littosat/css/littoviz.css" togglealllayersfromtheme="true"/>
+    <application id="littosat_normandie" title="Littosat Normandie" mouseposition="true" logo="https://littosat.hytech-imaging.fr/littosat-normandie/resources/icon_oeil_hytech_imaging.png" titlehelp=" " showhelp="true" help="demo/littosat/info.html" measuretools="true" exportpng="true" style="" togglealllayersfromtheme="true"/>
     <mapoptions maxzoom="16" projection="EPSG:3857" center="22398.35944155958713964, 6356276.84812058974057436" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
     <baselayers style="default"><!-- style="default"||gallery" -->
