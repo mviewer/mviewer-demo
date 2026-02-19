@@ -4,6 +4,18 @@
 		<p class="rb-text-feature">		
             <span style="font-weight:bold"> Adresse :</span> {{adresse_uai}} {{code_postal_uai}} {{localite_acheminement_uai}}<br/>
             <span style="font-weight:bold"> Type :</span> {{denomination_principale}}<br/>
+			{{#telephone}}
+				<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone}}<br/>
+			{{/telephone}}
+			
+			{{#mail}}
+				<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail}}<br/>
+			{{/mail}}
+			<div class="source">
+				<a href="https://www.data.gouv.fr/fr/datasets/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres-1/" target="_blank" rel="noopener noreferrer"
+					class="ressource-web">Source</a></i>
+			</div>
+
 		</p>
 	</li>
 {{/features}}

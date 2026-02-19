@@ -3,7 +3,7 @@
     <application title="Ma commune" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home"
         home="" zoomtools="true" initialextenttool="false"
         exportpng="false" showhelp="false" coordinates="false" measuretools="true"
-        mouseposition="false" geoloc="false"
+        mouseposition="false" geoloc="false" id="ma_commune"
         style="css/themes/pink.css"
         togglealllayersfromtheme="false">
 </application>
@@ -32,11 +32,11 @@
     </extensions>
     <themes mini="false">
 		<theme id="equipement" name="Données" collapsed="false" icon="fas fa-caret-right">
-				<layer id="commune"
+				<layer id="territoire"
 				name="Communes de Bretagne"
 				type="customlayer"
 				vectorlegend="false"
-				url="demo/ma_commune/customlayers/commune.js"
+				url="demo/ma_commune/customlayers/territoire.js"
 				queryable="false"
 				visible="true"
 				showintoc="false"
@@ -44,7 +44,8 @@
 			<layer id="administration" name="Administrations (mairies...)"
 				visible="true" tiled="false" searchable="false" queryable="true"
 				type="customlayer"
-				vectorlegend="true"
+				legendurl="https://ows.region-bretagne.fr/geoserver/rb/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;SLD_VERSION=1.1.0&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYER=administration&amp;STYLE=administration_ma_commune"
+				vectorlegend="false" dynamiclegend="true"
 				attribution="API de l'annuaire des services publics"
 				metadata="https://geobretagne.fr/datahub/dataset/b543ad35-966b-4bea-ad0d-ff03ce254914"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=b543ad35-966b-4bea-ad0d-ff03ce254914"				
@@ -52,21 +53,24 @@
 				<template url="demo/ma_commune/templates/administration.mst"></template>
 			</layer>
 			<layer id="etablissement_scolaire" name="Etablissements scolaires" visible="true" tiled="false" 
-				searchable="false" queryable="true" type="customlayer" vectorlegend="true"	attribution="Rectorat"
+				searchable="false" queryable="true" type="customlayer" vectorlegend="false"	attribution="Rectorat" dynamiclegend="true"
+				legendurl="https://geobretagne.fr/geoserver/rectorat/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;SLD_VERSION=1.1.0&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYER=etablissements_scolaire&amp;STYLE="
 				metadata="https://geobretagne.fr/datahub/dataset/f33ce68d-9643-4db1-a5e7-745896d5b25a"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=f33ce68d-9643-4db1-a5e7-745896d5b25a"
 				url="demo/ma_commune/customlayers/etablissement_scolaire.js">
 				<template url="demo/ma_commune/templates/etablissement_scolaire.mst"/>				
 			</layer>	
 			<layer id="culture" name="Equipements culturels" visible="true" tiled="false"
-				searchable="false" queryable="true" type="customlayer" vectorlegend="true" attribution="Ministère de la culture"
+				searchable="false" queryable="true" type="customlayer" vectorlegend="false" attribution="Ministère de la culture" dynamiclegend="true"
+				legendurl="https://geobretagne.fr/geoserver/opendata/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;SLD_VERSION=1.1.0&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYER=basilic&amp;STYLE=basilic_ma_commune"
 				metadata="https://geobretagne.fr/datahub/dataset/0f64e892-42be-4ba5-a3a7-bf5169db0c50"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=0f64e892-42be-4ba5-a3a7-bf5169db0c50"				
 				url="demo/ma_commune/customlayers/culture.js">
 				<template url="demo/ma_commune/templates/culture.mst"/>				
 			</layer>
 			<layer id="sport" name="Equipements de sport" visible="true" tiled="false" 
-				searchable="false" queryable="true" type="customlayer" vectorlegend="true" attribution="Ministère des sports"
+				searchable="false" queryable="true" type="customlayer" vectorlegend="false" attribution="Ministère des sports" dynamiclegend="true"
+				legendurl="https://geobretagne.fr/geoserver/opendata/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;SLD_VERSION=1.1.0&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYER=equipement_sportif&amp;STYLE=equipement_sportif_ma_commune"
 				metadata="https://geobretagne.fr/datahub/dataset/00c57e00-ee57-4e13-93d0-3f98b32004b9"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=00c57e00-ee57-4e13-93d0-3f98b32004b9"				
 				url="demo/ma_commune/customlayers/sport.js">
