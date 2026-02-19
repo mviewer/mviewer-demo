@@ -3,7 +3,74 @@
 		<h2 class="rb-title-feature">{{inst_nom}}</h2>
 		<p class="rb-text-feature">		
             <span style="font-weight:bold"> Adresse :</span> {{inst_adresse}} {{inst_cp}} {{inst_com_nom}}<br/>
-            <span style="font-weight:bold"> Type :</span> {{equip_type_famille}}<br/>
+            <span style="font-weight:bold"> Type :</span> {{equip_type_name}}<br/>
+			
+		<!--<div class="pictos">
+			<div class="floating-box equipement {{equip_douche}}"><span class="tooltiptext">Equipé de douche</span></div>
+        </div>-->
+
+			{{#equip_url}}
+			<div class="linkComponent template-component mb-2"
+			  data-type-selector="field"
+			  data-value="equip_url"
+			  data-text="Site web"
+			  data-icon="fas fa-globe "
+			  data-color="#ffffff"
+			  data-bg-color="#345266"
+			  data-component="linkComponent"
+			>
+			  <a href="{{#equip_url}}{{equip_url}}{{/equip_url}}" target="_blank" class="btn" style="background-color: #345266;color:#ffffff;">
+				<i class="fas fa-globe "></i>
+				Site web
+			  </a>
+			</div>
+			{{/equip_url}}<br>
+
+			  <a href="https://equipements.sports.gouv.fr/pages/fiche/?refine.equip_numero={{equip_numero}}" target="_blank" class="btn" style="background-color: #345266;color:#ffffff;">
+				<i class="fas fa-globe "></i>
+				URL service public
+			  </a>
+			<div class="source">
+				<a href="https://www.data.gouv.fr/datasets/recensement-des-equipements-sportifs-espaces-et-sites-de-pratiques" target="_blank" rel="noopener noreferrer"
+					class="ressource-web">Source</a></i>
+			</div>
+
+
 		</p>
 	</li>
 {{/features}}
+
+<style>
+.pictos {
+    padding-left: 10px;
+	padding-bottom: 20px;
+}
+.floating-box {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+}
+.equipement.true {
+    background: url(https://kartenn.region-bretagne.fr/img/styles/douche.svg) left top no-repeat;
+    background-size: 30px;
+}
+.equipement .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  margin-top: 30px;
+  background-color: #0094AB;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.equipement:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+</style>
