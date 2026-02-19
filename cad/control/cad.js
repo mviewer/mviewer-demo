@@ -156,7 +156,7 @@ mviewer.customControls.cad = (function () {
     let options = {
       TYPENAME: "CP.CadastralZoningLevel1",
       PROPERTYNAME: "nom_commune,geo_commune",
-      CQL_FILTER: "departement='" + selectedDpt + "'",
+      CQL_FILTER: "departement LIKE '%" + selectedDpt + "'",
     };
     document.getElementById("loading-cad").style.display = "block";
     fetch(querybuilder(options)).then((response) => {
@@ -190,7 +190,7 @@ mviewer.customControls.cad = (function () {
     let insee = selectedCom.substr(0, 2) + selectedCom.substr(3);
     let options = {
       TYPENAME: "CP.CadastralZoning",
-      CQL_FILTER: "geo_commune='" + selectedCom + "'",
+      CQL_FILTER: "geo_commune LIKE '%" + selectedCom + "'",
     };
     mviewer.customLayers.cad2.updateCommune(insee);
     document.getElementById("loading-cad").style.display = "block";
@@ -218,7 +218,7 @@ mviewer.customControls.cad = (function () {
     let selectedSection = e.target.value;
     let options = {
       TYPENAME: "CP.CadastralParcel",
-      CQL_FILTER: "geo_section='" + selectedSection + "'",
+      CQL_FILTER: "geo_section LIKE '" + selectedSection + "'",
     };
     document.getElementById("loading-cad").style.display = "block";
     fetch(querybuilder(options)).then((response) => {
