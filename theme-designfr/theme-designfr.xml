@@ -4,7 +4,8 @@
     title="Mviewer et le système de Design de l'Etat" 
     mouseposition="false" 
     logo="css/themes/theme-designfr/repfr-logo.png" 
-    favicon="css/themes/theme-designfr/dsfr-v1.6.0/dist/favicon/favicon.ico" 
+    favicon="css/themes/theme-designfr/dsfr-v1.14.3/dist/favicon/favicon.ico" 
+    titlehelp=" "
     help="demo/theme-designfr/home.html" 
     showhelp="true"
     measuretools="true" exportpng="true" 
@@ -25,9 +26,8 @@
     <searchparameters bbox="false" localities="true" features="false" />   
 
     <extensions>
-            <!-- Import du script JS de la librairie de style dsfr-->
-            <extension type="javascript" src="css/themes/theme-designfr/dsfr-v1.6.0/dist/dsfr.module.min.js"/>
-            <extension type="javascript" src="css/themes/theme-designfr/dsfr-v1.6.0/dist/dsfr.nomodule.min.js"/>
+            <!-- Import de l'API Javascript DSFR via un plugin-->
+            <extension type="component" id="dsfr-loader" path="css/themes/theme-designfr/"/>
     </extensions>
 
     <themes> 
