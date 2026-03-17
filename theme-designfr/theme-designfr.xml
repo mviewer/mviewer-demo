@@ -76,17 +76,16 @@
         </theme>
         <theme name="Transports"  collapsed="true" id="transport" icon="fas fa-bus">
         	<group name="Transport ferroviaire" id="grp1" >
-                <layer id="troncon_ferroviaire" name="Lignes ferroviaires"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"
+				<layer id="ligne_ferroviaire" name="Lignes ferroviaires"  visible="false" tiled="true"
+                    queryable="false"
+                    sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/ligne_ferroviaire.sld"
+                    style="ligne_ferroviaire"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    style="ligne_ferroviaire_defaut" 
-					stylesalias="Par défaut"
-                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-                    attribution="Source: Région Bretagne" 
-					metadata="https://geobretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
-					metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
-		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
-		        </layer>
+                    url="https://geobretagne.fr/geoserver/sncf/wms"
+                    attribution="SNCF réseau"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b8927600-5b49-11de-b5dc-0000c0a8230c">
+				</layer>
                 <layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="false" tiled="false" 
                     searchable="true" queryable="true" fields="" aliases=""                    
                     infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -101,14 +100,13 @@
                 </layer>
             </group>
 		    <group name="Transport maritime" id="grp2" >	    
-                <layer id="gare_maritime" name="Gares maritimes"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+				<layer id="gare_maritime" name="Gares maritimes"  visible="false" tiled="false"
+                    searchable="false" queryable="false" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="https://kartenn.region-bretagne.fr/styles/gare_maritime.sld" 
-                    url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                    legendurl="https://kartenn.region-bretagne.fr/doc/icons_region/gare_maritime.svg" 
-                    attribution="Source: DREAL Bretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
+                    url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/icons_region/gare_maritime.svg"
+                    attribution="Source: Région Bretagne"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" >
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.gare_maritime.mst"></template>
 		        </layer>
