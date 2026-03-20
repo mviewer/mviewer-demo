@@ -494,7 +494,7 @@
       "description": "Exemple d'application permettant de filtrer sur une commune via un paramètre dans l'URL.",
       "level": "intermédiaire",
       "url_source": "../demo/ma_commune/config.xml",
-      "url_demo": "../?config=demo/ma_commune/config.xml&commune=22266"
+      "url_demo": "../?config=demo/ma_commune/config.xml&siren=212202667"
     },
     {
       "id": "58",
