@@ -4,6 +4,19 @@
 		<p class="rb-text-feature">		
             <span style="font-weight:bold"> Adresse :</span> {{adresse_postale}}<br/>
             <span style="font-weight:bold"> Type :</span> {{type_equipement_ou_lieu}}<br/>
+			{{#precision_equipement}}
+				<span style="font-weight:bold"> Précision :</span> {{precision_equipement}}<br/>
+			{{/precision_equipement}}
+			
+			{{#type_de_cinema}}
+			<h3 class="rb-title-feature">Caractéristiques cinéma</h3>
+				<span style="font-weight:bold"> Nombre d'écrans :</span> {{nombre_ecrans}}<br/>
+				<span style="font-weight:bold"> Nombre de places :</span> {{nombre_fauteuils_de_cinema}}<br/>
+			{{/type_de_cinema}}
+			<div class="source">
+				<a href="https://www.data.gouv.fr/datasets/base-des-lieux-et-equipements-culturels-basilic" target="_blank" rel="noopener noreferrer"
+					class="ressource-web">Source</a></i>
+			</div>
 		</p>
 	</li>
 {{/features}}

@@ -7,9 +7,11 @@
   --mvcustom-color-secondary: #8cbd72;
   /* Variable permettant d'avoir les composants d'interface avec des bords carrés */
   --mvcustom-border-radius:0;
-  /* Taille des panels d'interrogation (exprimée en px ou %) */  
-  --mvcustom-rightpanel-size: 50%;
-  --mvcustom-bottompanel-size:200px;
+  /* Taille des panels d'interrogation */  
+  /* (exprimée en px ou vw) */
+  --mvcustom-rightpanel-size: 50vw;
+  /* (exprimée en px ou vh) */
+  --mvcustom-bottompanel-size:30vh;
   /* Navbar */
   --mvcustom-navbar-h:90px;
   --mvcustom-navbar-color:rgb(255, 255, 255);
