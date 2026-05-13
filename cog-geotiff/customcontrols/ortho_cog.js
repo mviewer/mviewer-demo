@@ -32,12 +32,13 @@ mviewer.customControls.ortho_cog = (function () {
       $(btn).click((x) => {
         // fast example
         // need to be improve by extent calculation from layer directly
+        mviewer.getLayer(_idlayer).layer.getSource().getView().then(v => {
+        const extent3857 = ol.proj.transformExtent(v.extent, v.projection, 'EPSG:3857')
         mviewer
           .getMap()
           .getView()
-          .fit([
-            397069.70995898556, 1747685.4816645968, 805288.7621372811, 1947701.1204109823,
-          ]);
+          .fit(extent3857);
+        })        
       });
     },
 

@@ -3,6 +3,7 @@ mviewer.customControls.ndvi_cog = (function () {
    * Private
    */
   var _idlayer = "ndvi_cog";
+  var _displayPixelValue = null;
 
   var _updateLayer = function () {};
 
@@ -12,12 +13,13 @@ mviewer.customControls.ndvi_cog = (function () {
      */
 
     init: function () {
+      this.destroy();
       // mandatory - code executed when panel is opened
       const output = document.getElementById("output");
       const btn = document.getElementById("ndvi_center");
       if (!output) return;
 
-      function displayPixelValue(event) {
+      _displayPixelValue = function (event) {
         const layer = mviewer.getLayer(_idlayer)?.layer;
         if (!layer) return;
         const data = layer.getData(event.pixel);
@@ -29,23 +31,30 @@ mviewer.customControls.ndvi_cog = (function () {
         const nir = data[1];
         const ndvi = (nir - red) / (nir + red);
         output.textContent = ndvi.toFixed(2);
-      }
+      };
       if (!mviewer.getMap()) return;
-      mviewer.getMap().on(["pointermove", "click"], displayPixelValue);
-      $(btn).click((x) => {
+      mviewer.getMap().on(["pointermove", "click"], _displayPixelValue);
+      $(btn).off("click.cog-geotiff").on("click.cog-geotiff", () => {
         // fast example
         // need to be improve by extent calculation from layer directly
+        mviewer.getLayer(_idlayer).layer.getSource().getView().then(v => {
+        const extent3857 = ol.proj.transformExtent(v.extent, v.projection, 'EPSG:3857')
         mviewer
           .getMap()
           .getView()
-          .fit([
-            1686280.9023518958, 6000534.59477369, 2242938.9215387097, 6273281.07408872,
-          ]);
+          .fit(extent3857);
+        })
       });
     },
 
     updateLayer: function (ctrl) {},
 
-    destroy: function () {},
+    destroy: function () {
+      if (_displayPixelValue && mviewer.getMap()) {
+        mviewer.getMap().un(["pointermove", "click"], _displayPixelValue);
+        _displayPixelValue = null;
+      }
+      $("#ndvi_center").off("click.cog-geotiff");
+    },
   };
 })();

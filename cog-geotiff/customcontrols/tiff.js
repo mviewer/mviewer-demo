@@ -3,6 +3,7 @@ mviewer.customControls.tiff = (function () {
    * Private
    */
   var _idlayer = "tiff";
+  var _displayPixelValue = null;
 
   var _updateLayer = function () {};
 
@@ -12,12 +13,13 @@ mviewer.customControls.tiff = (function () {
      */
 
     init: function () {
+      this.destroy();
       // mandatory - code executed when panel is opened
       const output = document.getElementById("output-tiff");
       const btn = document.getElementById("tiff_center");
       if (!output) return;
 
-      function displayPixelValue(event) {
+      _displayPixelValue = function (event) {
         const layer = mviewer.getLayer(_idlayer)?.layer;
         if (!layer) return;
         const data = layer.getData(event.pixel);
@@ -26,23 +28,30 @@ mviewer.customControls.tiff = (function () {
         }
         // random calcul example
         output.textContent = data[0].toFixed(2);
-      }
+      };
       if (!mviewer.getMap()) return;
-      mviewer.getMap().on(["pointermove", "click"], displayPixelValue);
-      $(btn).click((x) => {
+      mviewer.getMap().on(["pointermove", "click"], _displayPixelValue);
+      $(btn).off("click.cog-geotiff").on("click.cog-geotiff", () => {
         // fast example
         // need to be improve by extent calculation from layer directly
+        mviewer.getLayer(_idlayer).layer.getSource().getView().then(v => {
+        const extent3857 = ol.proj.transformExtent(v.extent, v.projection, 'EPSG:3857')
         mviewer
           .getMap()
           .getView()
-          .fit([
-            -491292.029705857, 6216156.180293629, -489733.12741514464, 6216919.99774839,
-          ]);
+          .fit(extent3857);
+        })
       });
     },
 
     updateLayer: function (ctrl) {},
 
-    destroy: function () {},
+    destroy: function () {
+      if (_displayPixelValue && mviewer.getMap()) {
+        mviewer.getMap().un(["pointermove", "click"], _displayPixelValue);
+        _displayPixelValue = null;
+      }
+      $("#tiff_center").off("click.cog-geotiff");
+    },
   };
 })();
