@@ -1,0 +1,15 @@
+    {
+      "type": "polygon",
+      "fill": {
+        "color": "rgba(42,157,143,0.25)"
+      },
+      "stroke": {
+        "color": "#2a9d8f",
+        "width": 2
+      },
+      "label": {
+        "field": "nom_epci",
+        "font": "12px Arial",
+        "color": "#222222"
+      }
+    }

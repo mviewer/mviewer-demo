@@ -1,0 +1,17 @@
+{
+  "type": "point",
+  "circle": {
+    "radius": 7,
+    "fillColor": "yellow",
+    "strokeColor": "blue",
+    "strokeWidth": 2
+  },
+  "label": {
+    "field": "nom",
+    "font": "12px Arial",
+    "color": "#222222",
+    "haloColor": "#ffffff",
+    "haloWidth": 3,
+    "offsetY": -14
+  }
+}

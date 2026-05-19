@@ -1,0 +1,37 @@
+{
+  "type": "cluster",
+  "distance": 40,
+  "minDistance": 20,
+  "single": {
+    "type": "point",
+    "icon": {
+      "src": "https://www.defibrillateurs.info/assets/images/logo-dae-itinerant.svg",
+      "scale": 0.03,
+      "anchor": [0.5, 1]
+    }
+  },
+  "cluster": {
+    "circle": {
+      "radius": {
+        "type": "interpolate",
+        "property": "count",
+        "stops": [
+          [2, 14],
+          [10, 18],
+          [50, 24],
+          [100, 30]
+        ]
+      },
+      "fillColor": "rgba(255, 255, 255, 0.9)",
+      "strokeColor": "#e63946",
+      "strokeWidth": 3
+    },
+    "text": {
+      "field": "count",
+      "font": "bold 13px Arial",
+      "color": "#e63946",
+      "haloColor": "#ffffff",
+      "haloWidth": 3
+    }
+  }
+}
