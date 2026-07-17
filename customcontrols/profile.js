@@ -130,10 +130,10 @@ mviewer.customControls.profile = (function () {
   };
 
   var _updateChart = function (dataxml) {
-    var response = $.xml2json(dataxml);
-    console.log(response);
+    const response = utils.xmlToJson(dataxml);
+    // console.log(response);
     if (response.Status.ProcessSucceeded) {
-      var result = JSON.parse(response.ProcessOutputs.Output.Data.LiteralData);
+      var result = JSON.parse(response.ProcessOutputs.Output.Data.LiteralData["#text"]);
       var mydata = {
         labels: [],
         data: [],
