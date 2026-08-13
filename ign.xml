@@ -21,7 +21,16 @@
     <searchparameters bbox="false" localities="true" features="false"/>
 
     <extensions>    
-        <extension type="component" id="isochroneAddon" path="addons"/>
+        <!-- <extension type="component" id="isochroneAddon" path="addons"/> -->
+		<extension type="component" id="isochroneAddon" path="addons">
+			<config>
+				<options>
+					<option name="isochroneUrl" value="https://data.geopf.fr/navigation/isochrone"/>
+					<option name="isoTitle" value="test"/>
+					<option name="isohroneColor" value="#b45793"/>
+				</options>
+			</config>
+		</extension>
     </extensions>
     <themes>
         <theme name="Géodésie"  id="geodesie" collapsed="false" icon="fas fa-caret-right">
