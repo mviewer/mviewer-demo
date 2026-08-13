@@ -18,7 +18,15 @@
     <searchparameters bbox="false" localities="true" features="false" /> 
 
     <extensions>
-		<extension type="component" id="print" path="addons"/>
+		<extension type="component" id="print" path="addons" config="addons/print/config.json">
+            <config>
+                <options>
+                    <option name="printLayouts" value="addons/print/layouts/standard.json"/>
+                    <option name="ownerLogo" value="https://avatars.githubusercontent.com/u/114171481?s=400&amp;u=7fcf63ac01887ece3f5f2d5527e92c10527c7a91&amp;v=4"/>
+                    <option name="ownerInfos" value="info propriétaire"/>
+                </options>
+            </config>
+		</extension>
 	</extensions>
 
     <themes mini="true" legendmini="false">        
