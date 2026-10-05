@@ -3,9 +3,9 @@
     <application title="Démo Fonds de plan" logo="" help="demo/demo_fonds_help.html" showhelp="true" exportpng="true" style="css/themes/green.css" geoloc="true"/>
     <mapoptions maxzoom="18" projection="EPSG:3857" rotation="true" center="-188398.16546588816,6126752.674427088" zoom="13" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
     <baselayers style="gallery">
-        <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
-            url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
-            visible="true" attribution="Map tiles by  &lt;a href='https://carto.com/attributions' target='_blank'>Carto &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+		<baselayer visible="true" id="osm_grey" thumbgallery="https://tile.geobretagne.fr/osm/tms/osm:grey/EPSG3857/16/64287/85957.png" title="OpenStreetMap Grey" label="OpenStreetMap Grey" type="WMTS" 
+			url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
         <baselayer  type="OSM" id="osm1" attributioncollapsible="false" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
             url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
             attribution="© MapQuest. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="false"/>
@@ -15,9 +15,6 @@
 		<baselayer visible="false" id="osm_grey" attributioncollapsible="false" thumbgallery="https://tile.geobretagne.fr/osm/tms/osm:grey/EPSG3857/16/64287/85957.png" title="OpenStreetMap Grey" label="OpenStreetMap Grey" type="WMTS" 
 			url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
             attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
-		<baselayer  type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb" thumbgallery="img/basemap/darkmatter.png" 
-            url="https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" maxzoom="20" 
-            visible="false" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
 		<baselayer visible="false" id="photo_ancienne" thumbgallery="img/basemap/ortho-ancien.jpg" title="Ortho ancienne" label="Ortho ancienne" type="WMTS" 
 			url="https://tile.geobretagne.fr/photo/service" layers="ORTHOIMAGERY.ORTHOPHOTOS.1950-1965" format="image/png" 
             attribution="IGN" matrixset="PM" fromcapacity="false" style="default"/>
