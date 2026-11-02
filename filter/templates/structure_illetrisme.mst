@@ -1,0 +1,21 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h4>{{nom_structure}}</h4>
+		<p class="text-feature">		
+			<span><b> Adresse :</b></span> {{adresse}} - {{code_postal}} - {{ville}}<br/>
+			<span><b> Type de structure :</b></span> {{type_structure}}<br/>
+			<span><b> Présentation :</b></span> {{presentation_structure}}<br/>
+			<span><b> Publics :</b></span> {{publics}}<br/>
+			<span><b> Actions :</b></span> {{actions}}<br/>
+			<span><b> Critères :</b></span> {{critere}}<br/>
+       </p>
+	</li>
+{{/features}}
+
+<style>	
+	.text-feature{
+		font-size:13px;
+		margin-top:10%;
+	}
+	
+</style>
