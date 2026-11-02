@@ -35,7 +35,7 @@
 				url="https://www.geo2france.fr/geoserver/hdf_common/ows"
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ddf1df4f-afde-4d8d-a82a-9539e02bb9ff"
 				metadata="https://www.geo2france.fr/datahub/dataset/ddf1df4f-afde-4d8d-a82a-9539e02bb9ff">
-				<template url="https://www.geo2france.fr/mviewer/apps/geo2france/templates/dora.mst"></template>
+				<template url="demo/filter/templates/dora.mst"></template>
 			</layer>
 			<layer
 				id="structure_illetrisme"
@@ -49,8 +49,8 @@
 				tooltip="true"
 				tooltipcontent="{{nom_structure}}"
 				infoformat="application/vnd.ogc.gml"
-				url="https://www.geo2france.fr/mviewer/apps/geo2france/customlayers/structure_illetrisme.js">
-				<template url="https://www.geo2france.fr/mviewer/apps/geo2france/templates/structure_illetrisme.mst"></template>
+				url="demo/filter/customlayers/structure_illetrisme.js">
+				<template url="demo/filter/templates/structure_illetrisme.mst"></template>
 			</layer>
 		</theme>
 	</themes>

@@ -1,0 +1,21 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h4>{{nom}}</h4>
+
+		<p class="text-feature">		
+			{{#presentation_resume}}<span><b> Présentation :</b></span> {{description}}<br/>{{/presentation_resume}}
+			{{#site_web}}<span><b> Site web :</b></span> <a href="{{site_web}}" target="_blank">{{site_web}}</a><br/>{{/site_web}}
+			
+			<span><b> Adresse :</b></span> {{adresse}} - {{complement_adresse}} {{commune}}<br/>
+			{{#courriel}}<span><b> E-mail :</b></span> {{courriel}}<br/>{{/courriel}}
+			{{#telephone}}<span><b> Téléphone :</b></span> {{telephone}}<br/>{{/telephone}}
+		</p>
+	</li>
+{{/features}}
+
+<style>
+	.text-feature{
+		font-size:13px;
+		margin-top:10%;
+	}
+</style>

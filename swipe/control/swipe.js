@@ -91,7 +91,7 @@ input[type=range]:focus::-ms-fill-upper {
 `;
 
 //Classe qui etend la classe abstraite et decrit le custom Control
-class Swipe extends AdvancedCustomControl {
+class SwipeControl extends AdvancedCustomControl {
   // Initialize the Custom Component
   constructor(id) {
     // Initialize CustomControl superClass
@@ -127,4 +127,4 @@ class Swipe extends AdvancedCustomControl {
   }
 }
 // Create The Swipe CustomControl
-new Swipe("swipe");
+new SwipeControl("swipe");
