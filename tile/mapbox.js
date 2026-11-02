@@ -5,7 +5,7 @@
     <script src="https://openlayers.org/en/v5.3.0/examples/resources/mapbox-streets-v6-style.js"></script>
 */
 
-  # pk.eyJ1Ijoic3BlbGhhdGUiLCJhIjoiY2s4ZmxvOTRiMDRsajNpczlicjBrMzIwbyJ9.w4Q_vR68XR_Yi2ss6Ac3pg
+  // pk.eyJ1Ijoic3BlbGhhdGUiLCJhIjoiY2s4ZmxvOTRiMDRsajNpczlicjBrMzIwbyJ9.w4Q_vR68XR_Yi2ss6Ac3pg
   const mapboxkey = "";
 
   const layer = new ol.layer.VectorTile({
