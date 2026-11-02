@@ -6,7 +6,7 @@ const aerial = new ol.layer.Tile({
   }),
 });
 //Classe qui etend la classe abstraite et decris le custom Layer
-class Swipe extends CustomLayer {
+class SwipeLayer extends CustomLayer {
   // Initialize the Custom Layer
   constructor(id, layer, legend, handle = false) {
     // Initialize CustomLayer superClass
@@ -14,7 +14,9 @@ class Swipe extends CustomLayer {
     // Define events on the Tile Layer
     aerial.on("prerender", function (event) {
       var ctx = event.context;
-      var width = ctx.canvas.width * (swipe.value / 100);
+      var swipeElement = document.getElementById("swipe");
+      var position = swipeElement ? swipeElement.value : 50;
+      var width = ctx.canvas.width * (position / 100);
       ctx.save();
       ctx.beginPath();
       ctx.rect(width, 0, ctx.canvas.width - width, ctx.canvas.height);
@@ -28,4 +30,4 @@ class Swipe extends CustomLayer {
   }
 }
 // Create The Custom Layer
-new Swipe("swipe", aerial);
+new SwipeLayer("swipe", aerial);
