@@ -2,6 +2,7 @@
 <StyledLayerDescriptor version="1.0.0"
     xmlns="http://www.opengis.net/sld"
     xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.opengis.net/sld https://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
     <NamedLayer>
@@ -53,28 +54,90 @@
                     </ogc:Filter>
                     <PointSymbolizer>
                         <Graphic>
+                            <ExternalGraphic>
+                                <OnlineResource xlink:type="simple" xlink:href="demo/sld/covoiturage.svg"/>
+                                <Format>image/svg+xml</Format>
+                            </ExternalGraphic>
+                            <Size>24</Size>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+                <!-- Classes sans chevauchement : 2–10, 11–30 et plus de 30 lieux. -->
+                <Rule>
+                    <Name>Entre 2 et 10 lieux</Name>
+                    <Title>Entre 2 et 10 lieux</Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsGreaterThan>
+                                <ogc:PropertyName>count</ogc:PropertyName>
+                                <ogc:Literal>1</ogc:Literal>
+                            </ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>count</ogc:PropertyName>
+                                <ogc:Literal>10</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <PointSymbolizer>
+                        <Geometry>
+                            <ogc:PropertyName>geom</ogc:PropertyName>
+                        </Geometry>
+                        <Graphic>
                             <Mark>
                                 <WellKnownName>circle</WellKnownName>
                                 <Fill>
-                                    <CssParameter name="fill">#0071EB</CssParameter>
+                                    <CssParameter name="fill">#6BAED6</CssParameter>
                                 </Fill>
                                 <Stroke>
                                     <CssParameter name="stroke">#FFFFFF</CssParameter>
                                     <CssParameter name="stroke-width">1</CssParameter>
                                 </Stroke>
                             </Mark>
-                            <Size>10</Size>
+                            <Size>20</Size>
                         </Graphic>
                     </PointSymbolizer>
                 </Rule>
-                <!-- Le diamètre varie avec l’effectif ; la légende utilise un aperçu fixe. -->
                 <Rule>
-                    <Name>Groupe de lieux</Name>
-                    <Title>Groupe de lieux</Title>
+                    <Name>Entre 10 et 30 lieux</Name>
+                    <Title>Entre 10 et 30 lieux</Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsGreaterThan>
+                                <ogc:PropertyName>count</ogc:PropertyName>
+                                <ogc:Literal>10</ogc:Literal>
+                            </ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>count</ogc:PropertyName>
+                                <ogc:Literal>30</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <PointSymbolizer>
+                        <Geometry>
+                            <ogc:PropertyName>geom</ogc:PropertyName>
+                        </Geometry>
+                        <Graphic>
+                            <Mark>
+                                <WellKnownName>circle</WellKnownName>
+                                <Fill>
+                                    <CssParameter name="fill">#3182BD</CssParameter>
+                                </Fill>
+                                <Stroke>
+                                    <CssParameter name="stroke">#FFFFFF</CssParameter>
+                                    <CssParameter name="stroke-width">1</CssParameter>
+                                </Stroke>
+                            </Mark>
+                            <Size>30</Size>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>Plus de 30 lieux</Name>
+                    <Title>Plus de 30 lieux</Title>
                     <ogc:Filter>
                         <ogc:PropertyIsGreaterThan>
                             <ogc:PropertyName>count</ogc:PropertyName>
-                            <ogc:Literal>1</ogc:Literal>
+                            <ogc:Literal>30</ogc:Literal>
                         </ogc:PropertyIsGreaterThan>
                     </ogc:Filter>
                     <PointSymbolizer>
@@ -85,21 +148,14 @@
                             <Mark>
                                 <WellKnownName>circle</WellKnownName>
                                 <Fill>
-                                    <CssParameter name="fill">#A34800</CssParameter>
+                                    <CssParameter name="fill">#08519C</CssParameter>
                                 </Fill>
                                 <Stroke>
                                     <CssParameter name="stroke">#FFFFFF</CssParameter>
                                     <CssParameter name="stroke-width">1</CssParameter>
                                 </Stroke>
                             </Mark>
-                            <Size>
-                                <ogc:Mul>
-                                    <ogc:Literal>8</ogc:Literal>
-                                    <ogc:Function name="sqrt">
-                                        <ogc:PropertyName>count</ogc:PropertyName>
-                                    </ogc:Function>
-                                </ogc:Mul>
-                            </Size>
+                            <Size>40</Size>
                         </Graphic>
                     </PointSymbolizer>
                 </Rule>
