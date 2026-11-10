@@ -34,6 +34,29 @@
                 tooltipcontent="{{dc_title}} et {{mv_clustercount}} autre(s) dossier(s)">
                 <template url="demo/cluster.mst"/>
                 </layer>
+            <!-- BNLC : symboles et effectifs à toutes les échelles ; noms des points isolés sous 1:50 000. -->
+            <layer
+                id="bnlc"
+                name="Base Nationale des Lieux de Covoiturage"
+                type="cluster"
+                format="csv"
+                url="https://www.data.gouv.fr/api/1/datasets/r/4fd78dee-e122-4c0d-8bf6-ff55d79f3af1"
+                sld="demo/sld/bnlc.sld"
+                xfield="Xlong"
+                yfield="Ylat"
+                queryable="true"
+                fields="nom_lieu,com_lieu,ad_lieu,type,nbre_pl,nbre_pmr,horaires,date_maj"
+                aliases="Nom,Commune,Adresse,Type,Nombre de places,Places PMR,Horaires,Dernière mise à jour"
+                searchable="true"
+                searchengine="fuse"
+                fusesearchkeys="nom_lieu,com_lieu"
+                fusesearchresult="{{nom_lieu}} — {{com_lieu}}"
+                srs="EPSG:4326"
+                visible="true"
+                expanded="true"
+                vectorlegend="true"
+                attribution="Données : transport.data.gouv.fr,  &lt;a href='https://www.data.gouv.fr/datasets/base-nationale-des-lieux-de-covoiturage' target='_blank'>data.gouv.fr &lt;/a>"
+            />
         </theme>
     </themes>
 </config>
