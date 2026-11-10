@@ -5,12 +5,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.opengis.net/sld https://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
     <NamedLayer>
-        <!-- Nom publié par le service WMS du workspace ars. -->
-        <Name>ambu_cds_bcg_2023</Name>
+        <Name>bnlc</Name>
         <UserStyle>
-            <Name>cluster</Name>
-            <Title>Centre de santé avec consultation MG : regroupement de points</Title>
-            <Abstract>Regroupement dans des cellules de 100 pixels, avec affichage du nombre de points par groupe.</Abstract>
+            <Name>bnlc_cluster</Name>
+            <Title>Base Nationale des Lieux de Covoiturage : regroupement de points</Title>
+            <Abstract>Regroupement à 50 pixels, effectifs des groupes et noms des lieux isolés sous 1:50 000.</Abstract>
             <FeatureTypeStyle>
                 <!-- https://docs.geoserver.org/main/en/user/styling/ysld/reference/transforms/#point-stacker -->
                 <Transformation>
@@ -42,9 +41,42 @@
                         </ogc:Function>
                     </ogc:Function>
                 </Transformation>
+                <!-- Un point isolé conserve les attributs du CSV et count = 1. -->
                 <Rule>
-                    <Name>points</Name>
-                    <Title>Points regroupés</Title>
+                    <Name>Lieu isolé</Name>
+                    <Title>Lieu isolé</Title>
+                    <ogc:Filter>
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>count</ogc:PropertyName>
+                            <ogc:Literal>1</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+                    <PointSymbolizer>
+                        <Graphic>
+                            <Mark>
+                                <WellKnownName>circle</WellKnownName>
+                                <Fill>
+                                    <CssParameter name="fill">#0071EB</CssParameter>
+                                </Fill>
+                                <Stroke>
+                                    <CssParameter name="stroke">#FFFFFF</CssParameter>
+                                    <CssParameter name="stroke-width">1</CssParameter>
+                                </Stroke>
+                            </Mark>
+                            <Size>10</Size>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+                <!-- Le diamètre varie avec l’effectif ; la légende utilise un aperçu fixe. -->
+                <Rule>
+                    <Name>Groupe de lieux</Name>
+                    <Title>Groupe de lieux</Title>
+                    <ogc:Filter>
+                        <ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyName>count</ogc:PropertyName>
+                            <ogc:Literal>1</ogc:Literal>
+                        </ogc:PropertyIsGreaterThan>
+                    </ogc:Filter>
                     <PointSymbolizer>
                         <Geometry>
                             <ogc:PropertyName>geom</ogc:PropertyName>
@@ -53,12 +85,16 @@
                             <Mark>
                                 <WellKnownName>circle</WellKnownName>
                                 <Fill>
-                                    <CssParameter name="fill">#0071EB</CssParameter>
+                                    <CssParameter name="fill">#A34800</CssParameter>
                                 </Fill>
+                                <Stroke>
+                                    <CssParameter name="stroke">#FFFFFF</CssParameter>
+                                    <CssParameter name="stroke-width">1</CssParameter>
+                                </Stroke>
                             </Mark>
                             <Size>
                                 <ogc:Mul>
-                                    <ogc:Literal>4</ogc:Literal>
+                                    <ogc:Literal>8</ogc:Literal>
                                     <ogc:Function name="sqrt">
                                         <ogc:PropertyName>count</ogc:PropertyName>
                                     </ogc:Function>
@@ -66,6 +102,48 @@
                             </Size>
                         </Graphic>
                     </PointSymbolizer>
+                </Rule>
+                <!-- Règle de texte distincte : masquer le nom ne masque pas le point. -->
+                <Rule>
+                    <Name>Noms des lieux isolés</Name>
+                    <Title>Noms des lieux isolés</Title>
+                    <ogc:Filter>
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>count</ogc:PropertyName>
+                            <ogc:Literal>1</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+                    <MaxScaleDenominator>50000</MaxScaleDenominator>
+                    <TextSymbolizer>
+                        <Label>
+                            <ogc:PropertyName>nom_lieu</ogc:PropertyName>
+                        </Label>
+                        <Font>
+                            <CssParameter name="font-family">Arial</CssParameter>
+                            <CssParameter name="font-size">12</CssParameter>
+                        </Font>
+                        <LabelPlacement>
+                            <PointPlacement>
+                                <AnchorPoint>
+                                    <AnchorPointX>0.5</AnchorPointX>
+                                    <AnchorPointY>0</AnchorPointY>
+                                </AnchorPoint>
+                                <Displacement>
+                                    <DisplacementX>0</DisplacementX>
+                                    <DisplacementY>10</DisplacementY>
+                                </Displacement>
+                            </PointPlacement>
+                        </LabelPlacement>
+                        <Halo>
+                            <Radius>2</Radius>
+                            <Fill>
+                                <CssParameter name="fill">#FFFFFF</CssParameter>
+                            </Fill>
+                        </Halo>
+                        <Fill>
+                            <CssParameter name="fill">#222222</CssParameter>
+                        </Fill>
+                    </TextSymbolizer>
                 </Rule>
                 <Rule>
                     <Name>effectifs</Name>
